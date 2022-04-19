@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/JHLIM/AndroidStudioProjects/fastcampus_16/app/src/main/res/layout/activity_main.xml" value="0.13958333333333334" />
+        <entry key="..\:/Users/JHLIM/AndroidStudioProjects/fastcampus_16/app/src/main/res/drawable/shape_circle.xml" value="0.1" />
+        <entry key="..\:/Users/JHLIM/AndroidStudioProjects/fastcampus_16/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/JHLIM/AndroidStudioProjects/fastcampus_16/app/src/main/res/layout/fragment_player.xml" value="0.176" />
+        <entry key="..\:/Users/JHLIM/AndroidStudioProjects/fastcampus_16/app/src/main/res/layout/item_video.xml" value="0.2" />
         <entry key="..\:/Users/JHLIM/AndroidStudioProjects/fastcampus_16/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.253125" />
       </map>
     </option>
