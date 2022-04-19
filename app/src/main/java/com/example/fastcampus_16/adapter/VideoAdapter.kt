@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide
 import com.example.fastcampus_16.R
 import com.example.fastcampus_16.model.VideoModel
 
-class VideoAdapter: ListAdapter<VideoModel, VideoAdapter.ViewHolder>(diffUtil) {
+class VideoAdapter(val callback: (String, String) -> Unit): ListAdapter<VideoModel, VideoAdapter.ViewHolder>(diffUtil) {
 
     inner class ViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
         fun bind(videoModel: VideoModel) {
@@ -24,8 +24,12 @@ class VideoAdapter: ListAdapter<VideoModel, VideoAdapter.ViewHolder>(diffUtil) {
             sunTitleTextView.text = videoModel.subtitle
 
             Glide.with(thumbnailImageView)
-                .load(videoModel.sources)
+                .load(videoModel.thumb)
                 .into(thumbnailImageView)
+
+            view.setOnClickListener {
+                callback(videoModel.sources, videoModel.title)
+            }
         }
     }
 
