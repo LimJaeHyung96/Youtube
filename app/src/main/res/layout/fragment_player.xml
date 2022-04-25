@@ -10,19 +10,19 @@
         android:id="@+id/mainContainerLayout"
         android:layout_width="0dp"
         android:layout_height="250dp"
-        android:background="@color/purple_200"
+        android:background="#AAAAAA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <com.google.android.exoplayer2.ui.PlayerView
         android:id="@+id/playerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/mainContainerLayout"
         app:layout_constraintStart_toStartOf="@id/mainContainerLayout"
-        app:layout_constraintTop_toTopOf="@id/mainContainerLayout" />
+        app:layout_constraintTop_toTopOf="@id/mainContainerLayout"
+        app:resize_mode="fill" />
 
     <ImageView
         android:id="@+id/bottomPlayerControlButton"
@@ -42,6 +42,7 @@
         android:ellipsize="end"
         android:maxLines="1"
         android:singleLine="true"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/bottomPlayerControlButton"
         app:layout_constraintEnd_toStartOf="@id/bottomPlayerControlButton"
         app:layout_constraintStart_toEndOf="@id/playerView"
